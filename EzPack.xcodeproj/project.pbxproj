@@ -80,6 +80,7 @@
 				5685807021772CF100317A18 /* Journey.swift */,
 				568580722177356000317A18 /* ItemEntry.swift */,
 				568580742177380A00317A18 /* PackingList.swift */,
+				56FFD15B217503F900EED31F /* DataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -105,7 +106,6 @@
 		56FFD15A2174DFEF00EED31F /* Supporting file */ = {
 			isa = PBXGroup;
 			children = (
-				56FFD15B217503F900EED31F /* DataManager.swift */,
 				36C99C78217488EE00EA3266 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting file";

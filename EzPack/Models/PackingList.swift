@@ -8,11 +8,8 @@
 
 import Foundation
 
+
 class PackingList {
-    let name: String
-    var itemList: [ItemEntry]?
+    var itemList: [Item]?
     
-    init(name: String) {
-        self.name = name
-    }
 }
