@@ -15,6 +15,9 @@
 		5685807121772CF100317A18 /* Journey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5685807021772CF100317A18 /* Journey.swift */; };
 		568580732177356000317A18 /* ItemEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568580722177356000317A18 /* ItemEntry.swift */; };
 		568580752177380A00317A18 /* PackingList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 568580742177380A00317A18 /* PackingList.swift */; };
+		56E67015217873A000FEFCAA /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E67014217873A000FEFCAA /* FormViewController.swift */; };
+		56E6701921788F0B00FEFCAA /* ActivitiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6701821788F0B00FEFCAA /* ActivitiesViewController.swift */; };
+		56E6701B21788F4800FEFCAA /* FinalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6701A21788F4800FEFCAA /* FinalListViewController.swift */; };
 		56FFD15C217503F900EED31F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FFD15B217503F900EED31F /* DataManager.swift */; };
 		56FFD15E2175051100EED31F /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56FFD15D2175051100EED31F /* MainTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -30,6 +33,9 @@
 		5685807021772CF100317A18 /* Journey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journey.swift; sourceTree = "<group>"; };
 		568580722177356000317A18 /* ItemEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemEntry.swift; sourceTree = "<group>"; };
 		568580742177380A00317A18 /* PackingList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackingList.swift; sourceTree = "<group>"; };
+		56E67014217873A000FEFCAA /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		56E6701821788F0B00FEFCAA /* ActivitiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitiesViewController.swift; sourceTree = "<group>"; };
+		56E6701A21788F4800FEFCAA /* FinalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalListViewController.swift; sourceTree = "<group>"; };
 		56FFD15B217503F900EED31F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		56FFD15D2175051100EED31F /* MainTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,6 +96,9 @@
 			children = (
 				56FFD15D2175051100EED31F /* MainTableViewController.swift */,
 				36C99C6F217488ED00EA3266 /* AppDelegate.swift */,
+				56E67014217873A000FEFCAA /* FormViewController.swift */,
+				56E6701821788F0B00FEFCAA /* ActivitiesViewController.swift */,
+				56E6701A21788F4800FEFCAA /* FinalListViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -186,8 +195,11 @@
 				568580732177356000317A18 /* ItemEntry.swift in Sources */,
 				56FFD15E2175051100EED31F /* MainTableViewController.swift in Sources */,
 				56FFD15C217503F900EED31F /* DataManager.swift in Sources */,
+				56E6701921788F0B00FEFCAA /* ActivitiesViewController.swift in Sources */,
+				56E6701B21788F4800FEFCAA /* FinalListViewController.swift in Sources */,
 				36C99C70217488ED00EA3266 /* AppDelegate.swift in Sources */,
 				5685807121772CF100317A18 /* Journey.swift in Sources */,
+				56E67015217873A000FEFCAA /* FormViewController.swift in Sources */,
 				568580752177380A00317A18 /* PackingList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

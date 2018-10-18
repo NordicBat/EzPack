@@ -10,6 +10,6 @@ import Foundation
 
 
 class PackingList {
-    var itemList: [Item]?
+    var itemList: [Item] = []
     
 }
