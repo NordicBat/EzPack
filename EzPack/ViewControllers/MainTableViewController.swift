@@ -22,7 +22,9 @@ class MainTableViewController: UITableViewController, FinalListViewControllerDel
     }
     
     
-    var journeys = DataManager.mockData()
+    var journeys: [Journey] = []
+        
+//        DataManager.mockData()
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -24,6 +24,8 @@ class ActivitiesViewController: UICollectionViewController {
         // Register cell classes
         self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
         print("\(journey!.destination) \(journey!.departureDate) + \(journey!.returnDate)")
+        print(journey!.business)
+        print(journey!.luggageWeight)
 
         // Do any additional setup after loading the view.
     }
