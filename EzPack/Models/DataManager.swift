@@ -115,7 +115,7 @@ class DataManager {
         accessories.itemList.append(Item(name: "Medication", weight: 0.1, sex: "unisex"))
         
         
-        var gym = PackingList()
+        let gym = PackingList()
         
         gym.itemList.append(Item(name: "Gym shoes", weight: 1.0, sex: "unisex"))
         gym.itemList.append(Item(name: "Gym shorts", weight: 0.3, sex: "unisex"))
@@ -123,7 +123,7 @@ class DataManager {
         gym.itemList.append(Item(name: "Gym towel", weight: 0.4, sex: "unisex"))
         
         
-        var water = PackingList()
+        let water = PackingList()
         
         water.itemList.append(Item(name: "Swimming gogles", weight: 0.2, sex: "unisex"))
         water.itemList.append(Item(name: "After sun lotion", weight: 0.3, sex: "unisex"))
@@ -134,7 +134,7 @@ class DataManager {
         water.itemList.append(Item(name: "Swimsuit", weight: 0.3, sex: "unisex"))
         
         
-        var snow = PackingList()
+        let snow = PackingList()
         
         snow.itemList.append(Item(name: "Helmet", weight: 0.4, sex: "unisex"))
         snow.itemList.append(Item(name: "Lomg Underwear", weight: 0.3, sex: "unisex"))
@@ -147,14 +147,14 @@ class DataManager {
         snow.itemList.append(Item(name: "Winter boots", weight: 1.2, sex: "unisex"))
         
         
-        var work = PackingList()
+        let work = PackingList()
         
         work.itemList.append(Item(name: "Business cards", weight: 0.1, sex: "unisex"))
         work.itemList.append(Item(name: "Laptop", weight: 1.2, sex: "unisex"))
         work.itemList.append(Item(name: "Laptop charger", weight: 0.3, sex: "unisex"))
         work.itemList.append(Item(name: "Work badge", weight: 0.1, sex: "unisex"))
         
-        var dinner = PackingList()
+        let dinner = PackingList()
         
         dinner.itemList.append(Item(name: "Shirt", weight: 0.6, sex: "unisex"))
         dinner.itemList.append(Item(name: "Shoe polish", weight: 0.2, sex: "unisex"))
@@ -164,7 +164,7 @@ class DataManager {
         dinner.itemList.append(Item(name: "Work shoes", weight: 0.9, sex: "unisex"))
         dinner.itemList.append(Item(name: "Tie", weight: 0.2, sex: "unisex"))
         
-        var party = PackingList()
+        let party = PackingList()
         
         party.itemList.append(Item(name: "Small mirror", weight: 0.1, sex: "female"))
         party.itemList.append(Item(name: "Make up kit", weight: 0.2, sex: "female"))
@@ -173,7 +173,7 @@ class DataManager {
         party.itemList.append(Item(name: "Application brushes", weight: 0.1, sex: "female"))
         party.itemList.append(Item(name: "Eyeliner", weight: 0.1, sex: "female"))
         
-        var nature = PackingList()
+        let nature = PackingList()
         
         nature.itemList.append(Item(name: "Head lamp", weight: 0.2, sex: "unisex"))
         nature.itemList.append(Item(name: "Mini cord", weight: 0.3, sex: "unisex"))
@@ -182,7 +182,7 @@ class DataManager {
         nature.itemList.append(Item(name: "Insect repellant", weight: 0.2, sex: "unisex"))
         nature.itemList.append(Item(name: "Anti-itch cream", weight: 0.2, sex: "unisex"))
         
-        var hicking = PackingList()
+        let hicking = PackingList()
         
         hicking.itemList.append(Item(name: "Trail shoes", weight: 0.5, sex: "unisex"))
         hicking.itemList.append(Item(name: "Compass", weight: 0.2, sex: "unisex"))
