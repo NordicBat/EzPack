@@ -20,20 +20,13 @@ class FormViewController: UITableViewController {
     @IBOutlet weak var luggageTextField: UITextField!
     @IBOutlet weak var nLadiesTextField: UITextField!
     @IBOutlet weak var nManTextField: UITextField!
-    @IBOutlet weak var continueButton: UIButton!
-    var guestSwitchValue: Bool = false
-    var leisureSwitchValue: Bool = false
-    var businessSwitchValue: Bool = false
+    
     
     private var departureDatePicker: UIDatePicker?
     private var returnDatePicker: UIDatePicker?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        continueButton.layer.cornerRadius = 10
-        continueButton.layer.borderWidth = 0
-       
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped(gestureRecognizer:)))
         departureDatePicker = UIDatePicker()
@@ -48,12 +41,7 @@ class FormViewController: UITableViewController {
         view.addGestureRecognizer(tapGesture)
         returnTextField.inputView = returnDatePicker
         view.endEditing(true)
-        
-        luggageTextField?.keyboardType = .numberPad
-        nLadiesTextField?.keyboardType = .decimalPad
-        nManTextField?.keyboardType = .decimalPad
     }
-    
 
     @objc func viewTapped(gestureRecognizer: UITapGestureRecognizer) {
         view.endEditing(true)
@@ -80,41 +68,15 @@ class FormViewController: UITableViewController {
     }
     
     
-    @IBAction func guestSwitch(_ sender: UISwitch) {
-        if sender.isOn == true {
-            guestSwitchValue = true
-        }
-    }
-    
-    @IBAction func leisureSwitch(_ sender: UISwitch) {
-        if sender.isOn == true {
-            leisureSwitchValue = true
-        }
-    }
-    
-    @IBAction func businessSwitch(_ sender: UISwitch) {
-        if sender.isOn == true {
-            businessSwitchValue = true
-        } else {
-            businessSwitchValue = false
-        }
-    }
-    
-    
     @IBAction func continueButtonPressed(_ sender: Any) {
         self.createNewJourney()
-     
+        
         if let _ = journey {
-            if journey!.daysBetweenDates() < 1 {
-                self.showAlertMessage(title: "Hint", message: "Invalid return date")
-            }
             self.performSegue(withIdentifier: "showActivitiesScreen", sender: self)
         } else {
             self.showAlertMessage(title: "Hint", message: "Please check the provided data")
         }
     }
-    
-    
     
     private func showAlertMessage(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
@@ -139,20 +101,6 @@ class FormViewController: UITableViewController {
             let returnDate = returnDatePicker {
             journey = Journey(destination: destination, departureDate: departureDate.date, returnDate: returnDate.date)
             print("\(journey!.destination) \(journey!.departureDate) + \(journey!.returnDate)")
-            print ("\(String(describing: journey?.daysBetweenDates()))")
-            if let weight = luggageTextField.text, !weight.isEmpty {
-                journey!.luggageWeight = Double(weight)
-            }
-            if let nLadies = nLadiesTextField.text, !nLadies.isEmpty {
-                journey!.numberOfLadies = Int(nLadies)
-            }
-            if let nMen = nManTextField.text, !nMen.isEmpty {
-                journey!.numberOfMen = Int(nMen)
-            }
-            journey!.guest = guestSwitchValue
-            journey!.leisure = leisureSwitchValue
-            journey!.business = businessSwitchValue
-            
         }
         
     }
