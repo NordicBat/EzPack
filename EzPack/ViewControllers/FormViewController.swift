@@ -103,10 +103,11 @@ class FormViewController: UITableViewController {
     
     @IBAction func continueButtonPressed(_ sender: Any) {
         self.createNewJourney()
-        if journey!.daysBetweenDates() < 1 {
-            self.showAlertMessage(title: "Hint", message: "Invalid return date")
-        }
+     
         if let _ = journey {
+            if journey!.daysBetweenDates() < 1 {
+                self.showAlertMessage(title: "Hint", message: "Invalid return date")
+            }
             self.performSegue(withIdentifier: "showActivitiesScreen", sender: self)
         } else {
             self.showAlertMessage(title: "Hint", message: "Please check the provided data")
